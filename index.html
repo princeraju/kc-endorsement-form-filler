@@ -46,7 +46,7 @@ footer{margin-top:28px;text-align:center;font-size:.75rem;color:var(--mut)}
 <body>
 <header class="hero"><div class="paw">🐾</div><h1>Kennel Club Endorsement Notice</h1><p>Fill in the form online and download the completed PDF</p></header>
 <main>
-<div class="privacy"><span class="lock">🔒</span><div><strong>Your data stays private.</strong> Fill in the details and download the completed PDF. Everything happens in your browser; nothing is uploaded anywhere.</div></div>
+<div class="privacy"><span class="lock">🔒</span><div><strong>Your data stays private.</strong> Fill in the details and download the completed PDF. Everything happens in your browser; your form details are never uploaded anywhere. Only an anonymous page-visit count is collected.</div></div>
 <form id="f" autocomplete="off">
 
 <fieldset><legend><span class="n">1</span>Details of dog</legend>
@@ -202,5 +202,7 @@ $('f').addEventListener('submit',async e=>{
   }catch(err){m.textContent='Could not create the PDF: '+err.message}
 });
 </script>
+<script data-goatcounter="https://princeraju.goatcounter.com/count"
+        async src="https://gc.zgo.at/count.js"></script>
 </body>
 </html>
